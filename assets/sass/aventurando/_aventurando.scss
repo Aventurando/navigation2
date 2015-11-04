@@ -1,0 +1,83 @@
+@import "typography";
+@import "compass/utilities/sprites";
+@import 'compass/css3';
+
+$componentes-sprite-dimensions:true;
+@import "componentes/*.png";
+@include all-componentes-sprites;
+
+
+*{margin:0;padding:0}
+
+body,html{
+    height:100%;
+    min-height:100%;
+    background:#4F3416;
+}
+
+.center-parent {
+  position: relative;
+}
+
+.center-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper{
+    display:inline-block !important;
+    position:relative !important;
+    text-align:center;
+}
+
+.wrapper-img{
+    width:100%;
+    max-width:1198px;
+    height:auto;
+}
+
+.button{
+    position:absolute;
+    left:0;
+    top:0;
+    width:300px;
+    height:30px;
+    background:red;
+    opacity:0.5;
+    cursor:pointer;
+}
+
+.real-button{
+    cursor:pointer;
+    display:block;
+}
+
+/*----------------- UTEIS -----------------*/
+.center-parent {
+  position: relative;
+}
+.center-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*--------------- COMPONENTES ----------------*/
+.button-a{
+    
+    //@include componentes-sprite(button-a-1)
+    @extend .componentes-button-a-1;
+    @extend .font-2;
+    @include transform(rotate(-15deg));
+    text-transform:uppercase;
+    &:hover{
+        @extend .componentes-button-a-2;
+    }
+    
+   
+    
+}
+
