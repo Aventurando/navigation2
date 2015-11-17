@@ -14,15 +14,20 @@ Author URI: http://wpod.in/#colaboradores
   font-style: normal;
 }
 /* line 18, ../sass/aventurando/_typography.scss */
-.font-2, .button-a {
+.font-1, body, html, .button-a {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* line 22, ../sass/aventurando/_typography.scss */
+.font-2 {
   font-family: "MARI&DAVID";
   font-weight: normal;
   font-style: normal;
 }
 
-/* line 56, componentes/*.png */
-.componentes-sprite, .componentes-button-a-1, .button-a, .componentes-button-a-2, .button-a:hover {
-  background-image: url('../imgs/componentes-s78224c0738.png');
+/* line 88, componentes/*.png */
+.componentes-sprite, .componentes-button-a-1, .button-a, .componentes-button-a-2, .button-a:hover, .componentes-button-b-1, .button-b, .componentes-button-b-2, .button-b:hover, .componentes-button-c-1, .button-c, .componentes-button-c-2, .button-c:hover {
+  background-image: url('../imgs/componentes-se09bde0b8b.png');
   background-repeat: no-repeat;
 }
 
@@ -40,6 +45,34 @@ Author URI: http://wpod.in/#colaboradores
   width: 156px;
 }
 
+/* line 84, ../../../../../../RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.componentes-button-b-1, .button-b {
+  background-position: 0 -320px;
+  height: 159px;
+  width: 153px;
+}
+
+/* line 84, ../../../../../../RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.componentes-button-b-2, .button-b:hover {
+  background-position: 0 -479px;
+  height: 159px;
+  width: 153px;
+}
+
+/* line 84, ../../../../../../RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.componentes-button-c-1, .button-c {
+  background-position: 0 -638px;
+  height: 101px;
+  width: 92px;
+}
+
+/* line 84, ../../../../../../RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.componentes-button-c-2, .button-c:hover {
+  background-position: 0 -739px;
+  height: 101px;
+  width: 92px;
+}
+
 /* line 10, ../sass/aventurando/_aventurando.scss */
 * {
   margin: 0;
@@ -53,12 +86,12 @@ body, html {
   background: #4F3416;
 }
 
-/* line 18, ../sass/aventurando/_aventurando.scss */
+/* line 19, ../sass/aventurando/_aventurando.scss */
 .center-parent {
   position: relative;
 }
 
-/* line 22, ../sass/aventurando/_aventurando.scss */
+/* line 23, ../sass/aventurando/_aventurando.scss */
 .center-child {
   position: absolute;
   top: 50%;
@@ -66,21 +99,21 @@ body, html {
   transform: translate(-50%, -50%);
 }
 
-/* line 29, ../sass/aventurando/_aventurando.scss */
+/* line 30, ../sass/aventurando/_aventurando.scss */
 .wrapper {
   display: inline-block !important;
   position: relative !important;
   text-align: center;
 }
 
-/* line 35, ../sass/aventurando/_aventurando.scss */
+/* line 36, ../sass/aventurando/_aventurando.scss */
 .wrapper-img {
-  width: 100%;
+  width: 1198px;
   max-width: 1198px;
   height: auto;
 }
 
-/* line 41, ../sass/aventurando/_aventurando.scss */
+/* line 43, ../sass/aventurando/_aventurando.scss */
 .button {
   position: absolute;
   left: 0;
@@ -92,19 +125,20 @@ body, html {
   cursor: pointer;
 }
 
-/* line 52, ../sass/aventurando/_aventurando.scss */
+/* line 54, ../sass/aventurando/_aventurando.scss */
 .real-button {
   cursor: pointer;
   display: block;
+  position: absolute !important;
 }
 
 /*----------------- UTEIS -----------------*/
-/* line 58, ../sass/aventurando/_aventurando.scss */
+/* line 61, ../sass/aventurando/_aventurando.scss */
 .center-parent {
   position: relative;
 }
 
-/* line 61, ../sass/aventurando/_aventurando.scss */
+/* line 64, ../sass/aventurando/_aventurando.scss */
 .center-child {
   position: absolute;
   top: 50%;
@@ -113,11 +147,40 @@ body, html {
 }
 
 /*--------------- COMPONENTES ----------------*/
-/* line 69, ../sass/aventurando/_aventurando.scss */
+/* line 72, ../sass/aventurando/_aventurando.scss */
 .button-a {
-  -moz-transform: rotate(-15deg);
-  -ms-transform: rotate(-15deg);
-  -webkit-transform: rotate(-15deg);
-  transform: rotate(-15deg);
-  text-transform: uppercase;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(-10deg) translate3d(0, 0, 0);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+  -webkit-backface-visibility: hidden;
+  color: #51490b;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  text-transform: lowercase;
+}
+/* line 94, ../sass/aventurando/_aventurando.scss */
+.button-a .inner-text {
+  text-shadow: 4px 4px 2px rgba(150, 150, 150, 0.51);
+}
+
+/* line 100, ../sass/aventurando/_aventurando.scss */
+.button-b {
+  background-repeat: no-repeat;
+}
+/* line 107, ../sass/aventurando/_aventurando.scss */
+.button-b .inner-text {
+  text-shadow: 4px 4px 2px rgba(150, 150, 150, 0.51);
+}
+
+/* line 114, ../sass/aventurando/_aventurando.scss */
+.button-c {
+  background-repeat: no-repeat;
+}
+/* line 121, ../sass/aventurando/_aventurando.scss */
+.button-c .inner-text {
+  text-shadow: 4px 4px 2px rgba(150, 150, 150, 0.51);
 }
